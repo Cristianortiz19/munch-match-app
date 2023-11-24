@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="register-screen">
+        <section id="bg"></section>
+        <section id="register">
+            <div>
+                <h2>Regístrate</h2>
+                <form id="registerForm">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" required>
+
+                    <label for="codigo">Código de estudiante:</label> 
+                    <input type="text" id="codigo" required>
+
+                    <button type="button" id="user-register-button"> Confirmar</button>
+                </form>
+            </div>
+            <div id="inicia-sesión">
+                <p>¿Ya tienes una cuenta? <a href="">Inicia sesión</a></p>
+            </div>
+        </section>
+        <img id="register-image" src="../public/icons/register-image.svg" alt="">
+    </div>
+
+    <div id="alergias-screen">
+        <h2>Antes de empezar</h2>
+        <p>¿Hay algún alimento que no te gusta o que te cause <strong>alergia</strong>?</p>
+        <div id="alergia-select">
+            <div class="checkbox-container" alergia="leche" status="0">
+                <img class="checkbox-image" src="../public/images/alergia1.webp" alt="">
+                <p>Leche</p>
+            </div>
+            <div class="checkbox-container" alergia="queso" status="0">
+                <img class="checkbox-image" src="../public/images/alergia2.webp" alt="">
+                <p>Queso</p>
+            </div>
+            <div class="checkbox-container" alergia="huevo" status="0">
+                <img class="checkbox-image" src="../public/images/alergia3.webp" alt="">
+                <p>Huevo</p>
+            </div>
+            <div class="checkbox-container" alergia="maíz" status="0">
+                <img class="checkbox-image" src="../public/images/alergia4.webp" alt="">
+                <p>Maíz</p>
+            </div>
+            <div class="checkbox-container" alergia="cebolla" status="0">
+                <img class="checkbox-image" src="../public/images/alergia5.webp" alt="">
+                <p>Cebolla</p>
+            </div>
+            <div class="checkbox-container" alergia="habichuela" status="0">
+                <img class="checkbox-image" src="../public/images/alergia6.webp" alt="">
+                <p>Habichuela</p>
+            </div>
+            <div class="checkbox-container" alergia="gluten" status="0">
+                <img class="checkbox-image" src="../public/images/alergia7.webp" alt="">
+                <p>Gluten</p>
+            </div>
+            <div class="checkbox-container" alergia="cafe" status="0">
+                <img class="checkbox-image" src="../public/images/alergia8.webp" alt="">
+                <p>Café</p>
+            </div>
+            <div class="checkbox-container" alergia="mani" status="0">
+                <img class="checkbox-image" src="../public/images/alergia9.webp" alt="">
+                <p>Maní</p>
+            </div>
+            <div class="checkbox-container" alergia="frutos-secos" status="0">
+                <img class="checkbox-image" src="../public/images/alergia10.webp" alt="">
+                <p>Frutos secos</p>
+            </div>
+            <div class="checkbox-container" alergia="mariscos" status="0">
+                <img class="checkbox-image" src="../public/images/alergia11.webp" alt="">
+                <p>Mariscos</p>
+            </div>
+            <div class="checkbox-container" alergia="pescado" status="0">
+                <img class="checkbox-image" src="../public/images/alergia12.webp" alt="">
+                <p>Pescado</p>
+            </div>
+            <div class="checkbox-container" alergia="tomate" status="0">
+                <img class="checkbox-image" src="../public/images/alergia13.webp" alt="">
+                <p>Tomate</p>
+            </div>
+            <div class="checkbox-container" alergia="soya" status="0">
+                <img class="checkbox-image" src="../public/images/alergia14.webp" alt="">
+                <p>Soya</p>
+            </div>
+        </div>
+        <button type="button" id="alergias-button"> Confirmar</button>
+    </div>
+    <div id="gustos-screen">
+        <div id="gustos-header">
+            <h2>Queremos conocerte</h2>
+            <p>Responde las siguientes preguntas para darte la<strong>¡Mejor opción de almuerzo!</strong></p>
+        </div>
+        
+        <div id="gustos-recomendation">
+            <img src="../public/icons/recomendation-icon.svg" alt="">
+            <p>Responde en la escala del 1 al 5, donde 1 es no y el 5 es si</p>
+        </div>
+    </div>
+    <script type="module" src="./register.js"></script>
+</body>
+</html>
