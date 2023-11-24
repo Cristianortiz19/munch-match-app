@@ -65,4 +65,16 @@ alergiasButton.addEventListener('click', () => {
     console.log(studentData)
 })
 
+const gustosButton = document.getElementById('gustos-button')
+const gustosList = document.querySelectorAll('.gustos-slider')
 
+gustosButton.addEventListener('click', () => {
+    let gustos =  {
+        arroz: gustosList[0].value,
+        vegetales: gustosList[1].value,
+        
+    }
+    //studentData.push(alergias)
+    //alergiasScreen.style.display = 'none';
+    console.log(gustos)
+})

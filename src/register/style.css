@@ -147,6 +147,7 @@
 
 #gustos-screen {
     padding: 10%;
+    overflow: auto;
 }
 
 #gustos-header h2 {
@@ -170,9 +171,62 @@
 
 #gustos-recomendation p {
     font-family: 'Product Sans';
-    font-size: 14px;
+    font-size: 15px;
     color: #363636;
     font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#gustos-sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#card-slider {
+    border-radius: 30px 30px 30px 0px;
+    border:  1px solid #118319;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#card-slider h4 {
+    font-family: 'Product Sans';
+    font-size: 16px;
+    color: #363636;
+    font-weight: 300;
+}
+
+#slider-markers {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Product Sans';
+    font-size: 16px;
+    color: #363636;
+    font-weight: 300;
+    padding: 0 5px;
+}
+
+#sliders-markers-p {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Product Sans';
+    font-size: 12px;
+}
+
+#gustos-button {
+    background-color: #FE901E;
+    color: white;
+    font-family: 'Product Sans';
+    border: none;
+    margin: 8% 0;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    width: 100%;
 }
 
 #register-screen {
@@ -182,6 +236,33 @@
 #alergias-screen {
     display: none;
 }
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: rgba(254, 144, 30, 0.18);
+    outline: none;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #FE901E;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
 
 
 @font-face {
