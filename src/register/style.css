@@ -145,31 +145,31 @@
     font-weight: 600;
 }
 
-#gustos-screen {
+.gustos {
     padding: 10%;
     overflow: auto;
 }
 
-#gustos-header h2 {
+.gustos-header h2 {
     font-family: 'Product Sans';
     font-size: 32px;
     color: #363636;
 }
 
-#gustos-header p {
+.gustos-header p {
     font-family: 'Gilroy';
     font-size: 23px;
     color: #363636;
     margin-top: 20px;
 }
 
-#gustos-recomendation {
+.gustos-recomendation {
     display: flex;
     gap: 10px;
     margin-top: 20px;
 }
 
-#gustos-recomendation p {
+.gustos-recomendation p {
     font-family: 'Product Sans';
     font-size: 15px;
     color: #363636;
@@ -177,13 +177,13 @@
     margin-bottom: 20px;
 }
 
-#gustos-sliders {
+.gustos-sliders {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#card-slider {
+.card-slider {
     border-radius: 30px 30px 30px 0px;
     border:  1px solid #118319;
     padding: 20px;
@@ -192,14 +192,14 @@
     gap: 15px;
 }
 
-#card-slider h4 {
+.card-slider h4 {
     font-family: 'Product Sans';
     font-size: 16px;
     color: #363636;
     font-weight: 300;
 }
 
-#slider-markers {
+.slider-markers {
     display: flex;
     justify-content: space-between;
     font-family: 'Product Sans';
@@ -209,14 +209,14 @@
     padding: 0 5px;
 }
 
-#sliders-markers-p {
+.sliders-markers-p {
     display: flex;
     justify-content: space-between;
     font-family: 'Product Sans';
     font-size: 12px;
 }
 
-#gustos-button {
+.gustos-button {
     background-color: #FE901E;
     color: white;
     font-family: 'Product Sans';
@@ -230,12 +230,34 @@
 }
 
 #register-screen {
-    display: none;
+    display: flex;
 }
 
 #alergias-screen {
     display: none;
 }
+
+#harinas-screen {
+    display: none;
+}
+
+#vegetales-screen {
+    display: none;
+}
+
+#proteinas-screen {
+    display: none;
+}
+
+#gracias {
+    font-family: 'Product Sans';
+    display: none;
+    align-items: center;
+    height: 100vh;
+    padding: 10%;
+    text-align: center;
+}
+
 
 .slider {
     -webkit-appearance: none;

@@ -1,3 +1,5 @@
+import { addStudent } from "../firebase.js";
+
 let userRegister = document.getElementById('user-register-button')
 let registerScreen = document.getElementById('register-screen');
 
@@ -42,6 +44,7 @@ checkboxList.forEach((checkbox, index) => {
 });
 
 const alergiasButton = document.getElementById('alergias-button');
+const harinaScreen = document.getElementById('harinas-screen')
 
 alergiasButton.addEventListener('click', () => {
     let alergias =  {
@@ -62,19 +65,70 @@ alergiasButton.addEventListener('click', () => {
     }
     studentData.push(alergias)
     alergiasScreen.style.display = 'none';
+    harinaScreen.style.display = 'block';
     console.log(studentData)
 })
 
-const gustosButton = document.getElementById('gustos-button')
+const gustosButtonHarina = document.getElementById('gustos-button-harina')
+const gustosButtonVegetal = document.getElementById('gustos-button-vegetales')
 const gustosList = document.querySelectorAll('.gustos-slider')
+const gustosButtonProteina = document.getElementById('gustos-button-proteina')
 
-gustosButton.addEventListener('click', () => {
+
+const vegetalScreen = document.getElementById('vegetales-screen')
+const proteinaScreen = document.getElementById('proteinas-screen')
+
+gustosButtonHarina.addEventListener('click', () => {
+    harinaScreen.style.display = 'none';
+    vegetalScreen.style.display = 'block'
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+})
+
+gustosButtonVegetal.addEventListener('click', () => {
+    vegetalScreen.style.display = 'none'
+    proteinaScreen.style.display = 'block'
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+})
+
+const gracias = document.getElementById('gracias')
+
+gustosButtonProteina.addEventListener('click', (e) => {
     let gustos =  {
         arroz: gustosList[0].value,
-        vegetales: gustosList[1].value,
-        
+        quinua: gustosList[1].value,
+        papa: gustosList[2].value,
+        pasta: gustosList[3].value,
+        vegetales: gustosList[4].value,
+        tomate: gustosList[5].value,
+        aguacate: gustosList[6].value,
+        zanahoria: gustosList[7].value,
+        cebolla: gustosList[8].value,
+        lechuga: gustosList[9].value,
+        pepino: gustosList[10].value,
+        maiz: gustosList[11].value,
+        champiñones: gustosList[12].value,
+        pollo: gustosList[13].value,
+        res: gustosList[14].value,
+        cerdo: gustosList[15].value,
+        pescado: gustosList[16].value,
+        mariscos: gustosList[17].value,
+        tofu: gustosList[18].value,
+        legumbres: gustosList[19].value,
     }
-    //studentData.push(alergias)
-    //alergiasScreen.style.display = 'none';
-    console.log(gustos)
+    studentData.push(gustos)
+    proteinaScreen.style.display = 'none'
+    console.log(studentData)
+    gracias.style.display = 'flex'
+    uploadStudent(e, studentData)
 })
+
+
+async function uploadStudent(e, student) {
+    e.preventDefault();
+    const name = student[0].nombre.toLowerCase().replace(/ /, '-')
+
+    console.log('Estudiante publicado!', student)
+    await addStudent(student, name);
+}

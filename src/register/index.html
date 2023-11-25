@@ -92,105 +92,391 @@
         </div>
         <button type="button" id="alergias-button"> Confirmar</button>
     </div>
-    <div id="gustos-screen">
-        <div id="gustos-header">
-            <h2>Queremos conocerte</h2>
+    <div id="harinas-screen" class="gustos">
+        <div class="gustos-header">
+            <h2>¿Qué harina prefieres?</h2>
             <p>Responde las siguientes preguntas para darte la<strong>¡Mejor opción de almuerzo!</strong></p>
         </div>
         
-        <div id="gustos-recomendation">
+        <div class="gustos-recomendation">
             <img src="../public/icons/recomendation-icon.svg" alt="">
             <p>Responde en la escala del 1 al 5, donde 1 es no y el 5 es si</p>
         </div>
-        <div id="gustos-sliders">
-            <div id="card-slider">
+        <div class="gustos-sliders">
+            <div class="card-slider">
                 <h4>¿Qué tanto te gusta el arroz en tus comidas?</h4>
                 <div>
                     <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
-                    <div id="slider-markers">
+                    <div class="slider-markers">
                         <p>1</p>
                         <p>2</p>
                         <p>3</p>
                         <p>4</p>
                         <p>5</p>
                     </div>
-                    <div id="sliders-markers-p">
+                    <div class="sliders-markers-p">
                         <p>Muy poco</p>
                         <p>Mucho</p>
                     </div>
                 </div>
             </div>
-            <div id="card-slider">
-                <h4>¿Qué tanto te gustan los vegetales en tus almuerzos?</h4>
+            <div class="card-slider">
+                <h4>¿Qué tanto te gusta la quinua en tus almuerzos?</h4>
                 <div>
                     <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
-                    <div id="slider-markers">
+                    <div class="slider-markers">
                         <p>1</p>
                         <p>2</p>
                         <p>3</p>
                         <p>4</p>
                         <p>5</p>
                     </div>
-                    <div id="sliders-markers-p">
+                    <div class="sliders-markers-p">
                         <p>Muy poco</p>
                         <p>Mucho</p>
                     </div>
                 </div>
             </div>
-            <div id="card-slider">
-                <h4>¿Qué tanto disfrutas de platos que incluyan ingredientes como aguacate, queso, o frutos secos?</h4>
+            <div class="card-slider">
+                <h4>¿Qué tan importante es para ti es la presencia de la papa en tus comidas?</h4>
                 <div>
                     <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
-                    <div id="slider-markers">
+                    <div class="slider-markers">
                         <p>1</p>
                         <p>2</p>
                         <p>3</p>
                         <p>4</p>
                         <p>5</p>
                     </div>
-                    <div id="sliders-markers-p">
+                    <div class="sliders-markers-p">
                         <p>Muy poco</p>
                         <p>Mucho</p>
                     </div>
                 </div>
             </div>
-            <div id="card-slider">
-                <h4>¿Qué tan importante es para ti la presencia de carne en tu almuerzo?</h4>
+            <div class="card-slider">
+                <h4>¿Qué tanto prefieres la pasta como harina en tus almuerzos?</h4>
                 <div>
                     <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
-                    <div id="slider-markers">
+                    <div class="slider-markers">
                         <p>1</p>
                         <p>2</p>
                         <p>3</p>
                         <p>4</p>
                         <p>5</p>
                     </div>
-                    <div id="sliders-markers-p">
-                        <p>Muy poco</p>
-                        <p>Mucho</p>
-                    </div>
-                </div>
-            </div>
-            <div id="card-slider">
-                <h4>¿Qué tan aficionado/a eres a los platos con sabores picantes?</h4>
-                <div>
-                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
-                    <div id="slider-markers">
-                        <p>1</p>
-                        <p>2</p>
-                        <p>3</p>
-                        <p>4</p>
-                        <p>5</p>
-                    </div>
-                    <div id="sliders-markers-p">
+                    <div class="sliders-markers-p">
                         <p>Muy poco</p>
                         <p>Mucho</p>
                     </div>
                 </div>
             </div>
         </div>
-        <button type="button" id="gustos-button">Confirmar</button>
+        <button type="button" id="gustos-button-harina" class="gustos-button">Siguiente</button>
     </div>
+    <div id="vegetales-screen" class="gustos">
+        <div class="gustos-header">
+            <h2>¿Qué vegetales prefieres?</h2>
+            <p>Responde las siguientes preguntas para darte la<strong>¡Mejor opción de almuerzo!</strong></p>
+        </div>
+        
+        <div class="gustos-recomendation">
+            <img src="../public/icons/recomendation-icon.svg" alt="">
+            <p>Responde en la escala del 1 al 5, donde 1 es no y el 5 es si</p>
+        </div>
+        <div class="gustos-sliders">
+            <div class="card-slider">
+                <h4>¿Qué tanto te gustan los vegetales en tus almuerzos?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿Qué tanto te gusta el tomate en tus almuerzos?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿Qué tanto disfrutas de platos que incluyan ingredientes como aguacate?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿La zanahoria es un vegetal que disfrutas en tus almuerzos?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿Disfrutas de los sabores aportados por la cebolla en tus almuerzos?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿Prefieres las ensaladas que incorporan lechuga?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿Te agrada la presencia de pepino en tus ensaladas y platillos?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿Disfrutas de los platos que incluyen maíz como uno de los componentes principales?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿Qué opinas sobre los platos que contienen champiñones como parte fundamental?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" id="gustos-button-vegetales" class="gustos-button">Siguiente</button>
+    </div>
+    <div id="gracias">
+        <h2>Gracias, después te recomendamos la comida jeje :p</h2>
+    </div>
+    <div id="proteinas-screen" class="gustos">
+        <div class="gustos-header">
+            <h2>¿Cuál proteína es tu favorita?</h2>
+            <p>Responde las siguientes preguntas para darte la<strong>¡Mejor opción de almuerzo!</strong></p>
+        </div>
+        
+        <div class="gustos-recomendation">
+            <img src="../public/icons/recomendation-icon.svg" alt="">
+            <p>Responde en la escala del 1 al 5, donde 1 es no y el 5 es si</p>
+        </div>
+        <div class="gustos-sliders">
+            <div class="card-slider">
+                <h4>¿Qué tan aficionado/a eres a la carne de pollo en tus almuerzos?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿Prefieres la carne de res cuando se trata de tus platos principales?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿Te gusta la carne de cerdo cuando se trata de tus platos principales?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿Te gusta incorporar pescado en tus comidas?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿Eres fan de platos que incluyen camarones u otros mariscos como parte esencial?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿Te gustan las opciones vegetarianas como tofu o tempeh en tus almuerzos?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <h4>¿Te agrada la idea de incluir legumbres como garbanzos o lentejas en tus comidas para obtener proteínas?</h4>
+                <div>
+                    <input list="steplist" type="range" min="1" max="5" value="3" class="slider gustos-slider" id="myRange">
+                    <div class="slider-markers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sliders-markers-p">
+                        <p>Muy poco</p>
+                        <p>Mucho</p>
+                    </div>
+                </div>
+            </div>
+        <button type="button" id="gustos-button-proteina" class="gustos-button">Siguiente</button>
+    </div>
+    
     <script type="module" src="./register.js"></script>
 </body>
 </html>
