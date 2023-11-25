@@ -45,7 +45,7 @@ nextBtn.addEventListener('click', () => {
      indice = indice + 1;
 
      if(indice === 4) {
-        window.location.href = './log-in/index.html'
+        window.location.href = './register/index.html'
         indice = 1
      }
 
