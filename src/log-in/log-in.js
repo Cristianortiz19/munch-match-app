@@ -11,7 +11,7 @@ confirmButton.addEventListener('click', () => {
     students.forEach(student => {
         if (codigo.value !== '') {
             if (codigo.value == student.studentData[0].codigo) {
-                window.location.href = './home/index.html'
+                window.location.href = '../home/index.html'
                 console.log(student)
             }
         }
