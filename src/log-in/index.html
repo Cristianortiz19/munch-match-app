@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicia Sección</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Inicia sesión</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="bg-image">
-        <img class="welcome-image" src="./public/images/welcome1.webp" alt="">
-    </section>
-    <section class="info">
-        <h2 class="title">Inicia sesión</h2>
-        <div class="info-nav">
-            <img class="image-status" src="./public/icons/welcome-status1.svg" alt="">
+    
+    <section id="bg"></section>
+    <section id="login">
+        <div>
+            <h2>Inicia sesión</h2>
+            <form id="loginForm">
+
+                <label for="codigo">Código de estudiante:</label> 
+                <input type="text" id="codigo" required>
+
+                <button type="button" id="user-login-button"> Confirmar</button>
+            </form>
+        </div>
+        <div id="inicia-sesión">
+            <p>¿Ya tienes una cuenta? <a href="">Inicia sesión</a></p>
         </div>
     </section>
+    <img id="login-image" src="../public/icons/login-image.svg" alt="">
+    
+    <script type="module" src="./log-in.js"></script>
 </body>
 </html>
