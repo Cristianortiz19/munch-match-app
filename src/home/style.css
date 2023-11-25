@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 8%;
+    padding-top: 12%;
+}
+
+#welcome h2 {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 32px;
+    color: #363636;
+}
+
+#welcome p {
+    font-family: 'Product Sans';
+    color: #363636;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../public/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../public/fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../public/fonts/ProductSans-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../public/fonts/ProductSans-Regular.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../public/fonts/ProductSans-Medium.ttf') format('truetype');
+    font-weight: 600;
+}
