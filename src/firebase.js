@@ -30,7 +30,7 @@ const db = getFirestore(app);
 
 export async function addStudent(studentData, id) {
     try {
-        await setDoc(doc(db, "students", id), studentData)
+        await setDoc(doc(db, "students", id), {studentData})
         console.log('Publicado!')
     } catch (e) {
         console.error("Error adding document: ", e)
