@@ -14,7 +14,7 @@ async function loadPage() {
         if(codigo == student.studentData[0].codigo) {
             studentLogged = student.studentData;
             welcomeMessage.innerHTML = '!Hola, '+ studentLogged[0].nombre + "!";
-            console.log(studentLogged[0].nombre)
+            console.log(studentLogged)
         }
     });
 }
