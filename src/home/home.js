@@ -1,4 +1,7 @@
 import { getStudents } from "../firebase.js";
+const shell = require('shelljs');
+
+const pythonScriptPath = '../back-end/main.py'
 
 let students = await getStudents();
 
