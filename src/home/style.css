@@ -107,6 +107,68 @@ body {
     margin-top: 20px;
 }
 
+#reseñas-cards{
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+}
+
+.card-reseña {
+    background-color: #118319;
+    color: white;
+    border-radius: 15px;
+}
+
+.reseña-profile {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.reseña-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.reseña-profile div {
+    width: 70%;
+    text-align: left;
+}
+
+.reseña-profile div h3{
+    font-family: 'Product Sans';
+    font-size: 14px;
+    padding: 8px;
+}
+
+.reseña-profile div nav {
+    background-color: #FE901E;
+    padding: 4px 10px;
+    border-radius: 9px 0px 0px 9px;
+}
+
+.reseña-profile div nav p {
+    font-size: 8px;
+    font-family: 'Product Sans';
+    font-weight: 300;
+}
+
+.reseña-profile div nav h4 {
+    font-size: 12px;
+    font-family: 'Product Sans';
+}
+
+.reseña-content {
+    padding: 15px;
+    font-family: 'Product Sans';
+    font-size: 13px;
+}
+
+.reseña-content p {
+    font-size: 8px;
+}
+
 @font-face {
     font-family: 'Gilroy';
     src: url('../public/fonts/Gilroy-Regular.ttf') format('truetype');
