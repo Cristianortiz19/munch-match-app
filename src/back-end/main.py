@@ -3,7 +3,11 @@ import os
 import firebase_admin
 from firebase_admin import credentials, firestore
 from sklearn.metrics.pairwise import cosine_similarity
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 
+app = Flask(__name__)
+CORS(app)
 
 
 def dir(rute):
@@ -109,9 +113,7 @@ recomendations = {}
 
 
 students_profile = pd.DataFrame(students_profile)
-
-
-
+    
 def get_recomendation(codigo):
     student_id = students_profile.columns.get_loc(codigo)
     
@@ -121,12 +123,32 @@ def get_recomendation(codigo):
     
     plato_recomendado = df_similitudes.sort_values(by= 'similitud', ascending=False).index.tolist()
     
-    print(df_similitudes)
-    
     
     return plato_recomendado
 
+tu_plato = {}
 
-tu_plato = get_recomendation('A00372906')
+#for student in students_profile:
+#    tu_plato[student] = get_recomendation(student)
+    
+    
 
-print(f"Para el estudiante con código A00372906, se recomienda el plato con ID {tu_plato}.")
+#print(tu_plato)
+
+
+# GET Endpoint
+
+@app.route("/plate_recomendation", methods=["POST"])
+def plate_recomendation():
+    datos = request.get_json()
+    
+    parametro = datos.get('parametro', None)
+    
+    if parametro is not None:
+        result = get_recomendation(parametro)
+        return jsonify({'result': result})
+    else:
+        return jsonify({'error': 'Parámetro flatante'}), 400
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5050)

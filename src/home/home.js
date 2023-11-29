@@ -1,21 +1,4 @@
 import { getStudents } from "../firebase.js";
-const { PythonShell } = require('python-shell');
-
-const options = {
-    scriptPath: '../',
-    pythonPath: 'back-end'
-}
-
-const pyshell = new PythonShell('main.py', options);
-
-pyshell.on('message', (message) => {
-    const recomendationList = JSON.parse(message);
-    console.log(recomendationList)
-})
-
-pyshell.on('error', (err) => {
-    console.error(err);
-})
 
 let students = await getStudents();
 
@@ -24,12 +7,27 @@ const welcomeMessage = document.getElementById('welcome-message');
 const urlParams = new URLSearchParams(window.location.search);
 const codigo = urlParams.get('user');
 
-pyshell.send(codigo);
+// llamar función de python
+function callFunction() {
+    const parametroJs = codigo
 
-pyshell.end((err, code, signal) => {
-    if (err) throw err;
-    console.log('Script Python finalizado con código', code)
-})
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('POST', 'http://localhost:5050/plate_recomendation',  true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            const respuestaPython = JSON.parse(xhr.responseText);
+            console.log(respuestaPython.result);
+        }
+    };
+
+    const datos = {parametro: parametroJs};
+    xhr.send(JSON.stringify(datos))
+}
+
+callFunction()
 
 let studentLogged = [];
 
