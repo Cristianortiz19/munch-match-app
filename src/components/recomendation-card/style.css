@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.plate-img {
+    width: 150px;
+}
+
+.card-text {
+    font-family: 'Product Sans';
+    font-size: 14px;
+    padding: 10px;
+}
+
+.recomendation-card {
+    box-shadow: 0px 0px 8px 0px rgba(61, 61, 61, 0.37);
+    border: 0.5px solid #118319;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../public/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../public/fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../../public/fonts/ProductSans-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../../public/fonts/ProductSans-Regular.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../../public/fonts/ProductSans-Medium.ttf') format('truetype');
+    font-weight: 600;
+}

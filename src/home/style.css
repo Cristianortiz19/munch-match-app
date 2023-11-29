@@ -21,6 +21,92 @@ body {
     font-size: 16px;
 }
 
+#recomendation-cards {
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+    margin: 20px 0;
+}
+
+#barra-busqueda{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    border: 1px solid #FE901E;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#barra-busqueda nav {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+
+#barra-busqueda nav p {
+    font-family: 'Product Sans';
+    font-weight: 300;
+    color: #828282;
+}
+
+.cafeteria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #828282;
+    padding: 5px 0;
+}
+
+.cafeteria nav {
+    display: flex;
+    gap: 10px;
+}
+
+.cafeteria nav h4 {
+    color: #FE901E;
+    font-family: 'Product Sans';
+    font-size: 16px;
+}
+
+.cafeteria nav p {
+    font-family: 'Product Sans';
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.cafeteria h3 {
+    font-family: 'Product Sans';
+    font-size: 14px;
+    margin: 0;
+}
+
+#cafeteria-title {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#cafeteria-title h2 {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 20px;
+    color: #363636;
+}
+
+#cafeteria-title a{
+    text-decoration: none;
+    color: #999;
+    font-size: 14px;
+    font-family: 'Product Sans';
+}
+
+#reseñas {
+    margin-top: 20px;
+}
+
 @font-face {
     font-family: 'Gilroy';
     src: url('../public/fonts/Gilroy-Regular.ttf') format('truetype');
