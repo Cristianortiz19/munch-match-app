@@ -120,8 +120,10 @@ gustosButtonProteina.addEventListener('click', (e) => {
     studentData.push(gustos)
     proteinaScreen.style.display = 'none'
     console.log(studentData)
-    gracias.style.display = 'flex'
+    
     uploadStudent(e, studentData)
+    setTimeout(window.location.href = '../log-in/index.html', 1000);
+    
 })
 
 
