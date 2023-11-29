@@ -7,6 +7,7 @@ let studentData = []
 
 let alergiasScreen = document.getElementById('alergias-screen')
 
+let cod;
 
 userRegister.addEventListener('click', () => {
     let name = document.getElementById('name').value;
@@ -19,7 +20,7 @@ userRegister.addEventListener('click', () => {
             nombre: name,
             codigo: codigo,
         }
-
+        cod = codigo
         studentData.push(data)
         console.log(studentData)
     }
@@ -122,7 +123,11 @@ gustosButtonProteina.addEventListener('click', (e) => {
     console.log(studentData)
     
     uploadStudent(e, studentData)
-    setTimeout(window.location.href = '../log-in/index.html', 1000);
+    setTimeout(function() {
+        console.log("Función ejecutada después de 1 segundo");
+        // Llamar a la función que quieres ejecutar después de 1 segundo
+        window.location.href = '../log-in/index.html'
+    }, 1000);
     
 })
 
